@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
-    <title>Document</title>
+    <title>Game</title>
 </head>
 <body>
     <h1>Welcome to the great number game</h1>
@@ -16,10 +16,12 @@
         <div class="{{show}}">
             <h4 class="info">{{text}}</h4>
         </div>
-        <input type="text" name="numero" id="numero">
+        <input type="text" name="numero" id="numero" class="{{gameover}}">
         <button type="submit">Submit</button>
     </form>
-    <form action="/win" class="{{winList}}">
+    <form action="/win" class="{{winList}}" method="POST">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name">
         <button type="submit">Registrar puntaje</button>
     </form>
 
