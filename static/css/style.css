@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 16px;
+    text-align: center;
+}
+
+h4 {
+    margin: 16px;
+    text-align: center;
+}
+
+form {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    margin: 16px;
+}
+
+.none{
+    display: none;
+}
+.show{
+    display: flex;
+}
+.green{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+
+}
+
+.red{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+
+.info{
+    text-align: center;
+    font-size: xx-large;
+    color:white;
+    width: 100%;
+}
